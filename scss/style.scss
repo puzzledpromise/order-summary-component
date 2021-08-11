@@ -1,0 +1,39 @@
+// Colors
+
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+
+$veryPaleBlue: #e0e8ff;
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+
+// Component Colors
+
+$backgroundCol: $veryPaleBlue;
+$componentBgCol: white;
+
+body {
+  height: 100vh;
+  background-image: url('../images/pattern-background-mobile.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: $backgroundCol;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 327px;
+  height: 567px;
+  background-color: $componentBgCol;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
