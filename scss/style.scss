@@ -144,6 +144,60 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    background-color: red;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-size: 100% 45%;
+  }
+
+  .container {
+    width: 450px;
+
+    h1 {
+      margin-top: 45px;
+      color: $h1Col;
+      font-size: 28px;
+    }
+
+    p {
+      font-weight: 500;
+      margin-top: 17px;
+      font-size: 16px;
+      margin-left: 48px;
+      margin-right: 48px;
+    }
+
+    .offer {
+      width: 354px;
+      height: 98px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-top: 20px;
+
+      .offer-plan {
+        margin-right: 100px;
+        font-size: 16px;
+      }
+
+      a {
+        font-size: 14px;
+      }
+    }
+
+    .proceed-btn {
+      width: 354px;
+      border: none;
+      margin-top: 32px;
+      font-weight: 900;
+    }
+
+    .cancel-btn {
+      margin-top: 32px;
+      margin-bottom: 48px;
+      font-weight: 900;
+      font-size: 15px;
+
+      &:hover {
+        color: $cancelHoverFg;
+      }
+    }
   }
 }
