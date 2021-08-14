@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap");
 body {
   height: 100vh;
   background-image: url("../images/pattern-background-mobile.svg");
@@ -17,13 +18,125 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 .container {
   width: 327px;
-  height: 567px;
   background-color: white;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.container img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.container h1 {
+  margin-top: 32px;
+  color: #1f2e55;
+  text-align: center;
+  font-size: 22px;
+}
+
+.container p {
+  margin-top: 16px;
+  font-size: 15px;
+  color: #717fa6;
+  text-align: center;
+}
+
+.container .offer {
+  background-color: #f7f9ff;
+  color: #717fa6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 280px;
+  height: 80px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 11px;
+  margin-top: 24px;
+}
+
+.container .offer .offer-plan {
+  margin-right: 50px;
+  line-height: 1.5;
+  color: #717fa6;
+  font-size: 14px;
+}
+
+.container .offer .offer-plan span {
+  font-weight: bold;
+  color: #1f2e55;
+}
+
+.container .offer .note-icon {
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/icon-music.svg");
+}
+
+.container .offer a {
+  font-weight: bold;
+  color: #382ae1;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.container .proceed-btn {
+  background-color: #382ae1;
+  border: none;
+  color: white;
+  height: 50px;
+  border-radius: 11px;
+  cursor: pointer;
+  width: 280px;
+  border: none;
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+.container .proceed-btn:hover {
+  background-color: #766cf1;
+}
+
+.container .cancel-btn {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  color: #717fa6;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container .cancel-btn:hover {
+  color: #1f2e55;
 }
 
 @media screen and (min-width: 768px) {

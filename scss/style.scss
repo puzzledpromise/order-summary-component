@@ -1,16 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+
 // Colors
 
-$paleBlue: hsl(225, 100%, 94%);
-$brightBlue: hsl(245, 75%, 52%);
+$paleBlue: #e0e8ff;
+$brightBlue: #382ae1;
 
-$veryPaleBlue: #e0e8ff;
-$desaturatedBlue: hsl(224, 23%, 55%);
-$darkBlue: hsl(223, 47%, 23%);
+$veryPaleBlue: #f7f9ff;
+$desaturatedBlue: #717fa6;
+$darkBlue: #1f2e55;
 
 // Component Colors
 
-$backgroundCol: $veryPaleBlue;
+$backgroundCol: $paleBlue;
 $componentBgCol: white;
+$h1Col: $darkBlue;
+$textCol: $desaturatedBlue;
+$offerBg: $veryPaleBlue;
+$offerFg: $desaturatedBlue;
+$buttonBg: $brightBlue;
+$buttonHoverBg: #766cf1;
+$buttonFg: white;
+$planFg: $darkBlue;
+$changeFg: $brightBlue;
+$cancelFg: $desaturatedBlue;
+$cancelHoverFg: $darkBlue;
 
 body {
   height: 100vh;
@@ -23,13 +36,110 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 .container {
   width: 327px;
-  height: 567px;
   background-color: $componentBgCol;
   border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  h1 {
+    margin-top: 32px;
+    color: $h1Col;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  p {
+    margin-top: 16px;
+    font-size: 15px;
+    color: $textCol;
+    text-align: center;
+  }
+
+  .offer {
+    background-color: $offerBg;
+    color: $offerFg;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    height: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 11px;
+    margin-top: 24px;
+
+    .offer-plan {
+      margin-right: 50px;
+      line-height: 1.5;
+      color: $offerFg;
+      font-size: 14px;
+
+      span {
+        font-weight: bold;
+        color: $planFg;
+      }
+    }
+    .note-icon {
+      width: 48px;
+      height: 48px;
+      background-image: url('../images/icon-music.svg');
+    }
+
+    a {
+      font-weight: bold;
+      color: $changeFg;
+      font-size: 13px;
+      font-weight: bold;
+    }
+  }
+
+  .proceed-btn {
+    background-color: $buttonBg;
+    border: none;
+    color: $buttonFg;
+    height: 50px;
+    border-radius: 11px;
+    cursor: pointer;
+    width: 280px;
+    border: none;
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 24px;
+
+    &:hover {
+      background-color: $buttonHoverBg;
+    }
+  }
+
+  .cancel-btn {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    color: $cancelFg;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: $cancelHoverFg;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
