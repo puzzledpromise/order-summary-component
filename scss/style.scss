@@ -90,12 +90,15 @@ body {
     margin-top: 1.5rem;
 
     .offer-plan {
-      margin-right: 3.125rem;
+      margin-right: 2.5rem;
+      margin-left: 1rem;
       line-height: 1.5;
       color: $offerFg;
       font-size: 0.875rem;
+      display: flex;
+      flex-direction: column;
 
-      span {
+      span.plan {
         font-weight: bold;
         color: $planFg;
       }
@@ -109,7 +112,7 @@ body {
     a {
       font-weight: bold;
       color: $changeFg;
-
+      font-size: 0.875rem;
       font-weight: bold;
     }
   }
