@@ -25,6 +25,12 @@ $changeFg: $brightBlue;
 $cancelFg: $desaturatedBlue;
 $cancelHoverFg: $darkBlue;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   background-image: url('../images/pattern-background-mobile.svg');
